@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+}
+
+main{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem;
+    background-color: hsl(244, 38%, 16%);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.description{
+    font-family: 'Inter', sans-serif;
+    padding: 70px;
+}
+
+.description h3{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.description h3 > span{
+    color: hsl(277, 64%, 61%);
+}
+
+.description > p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.user__description{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+
+}
+
+:where(.companies, .templates, .queries) span{
+    line-height: 2;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+:where(.companies, .templates, .queries) p{
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.companies span{
+    text-transform: lowercase;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%) sepia(70%) brightness(50%) hue-rotate(250deg) saturate(500%) opacity(80%);
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 425px){
+    body{
+        text-align: center;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .description{
+        padding: 30px;
+    }
+
+    .user__description{
+        flex-direction: column;
+    }
+
+    .image{
+        order: -1;
+    }
+}
