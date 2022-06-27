@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans',sans-serif;
+    background: url('./profile-card-component-main/images/bg-pattern-top.svg') center top repeat,
+    url('./profile-card-component-main/images/bg-pattern-bottom.svg') center bottom repeat;
+    
+}
+
+main{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.card{
+    margin: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card__profile{
+    position: relative;
+}
+
+.card__profile img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.card__user-description{
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.card__user-description .name span,
+.card__user-data span{
+   color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.card__user-description p,
+.card__user-data p{
+    color: hsl(227, 10%, 46%);
+}
+
+.card__user-data{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+    padding-top: 1.5rem;
+    border-top: 0.5px solid rgb(199, 198, 198);
+
+}
+
+.card__user-data p{
+    font-size: 0.8rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
