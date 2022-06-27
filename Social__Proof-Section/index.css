@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'League Spartan', sans-serif;
+    background-image: url('./social-proof-section-master/images/bg-pattern-top-desktop.svg');
+}
+
+main{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container{
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.description{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2.5rem;
+}
+
+.information h2{
+    font-size: 3.5rem;
+    color: hsl(300, 43%, 22%);
+}
+
+.information p{
+    margin-top: 1.5rem;
+    margin-right: 3rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.data-item{
+    display: flex;
+    margin-bottom: 1rem;
+    padding: 1rem 1.5rem;
+    width: max-content;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+}
+
+.data-1{
+    margin-left: 1rem;
+}
+
+.data-2{
+    margin-left: 3rem;
+}
+
+.data-3{
+    margin-left: 6rem;
+}
+
+.data__stars{
+    margin-right: 1rem;
+}
+
+.data-ranking p{
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+
+.users{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.user{
+    height: max-content;
+    padding: 1.5rem;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+}
+
+.user-2{
+    margin-top: 1rem;
+}
+
+.user-3{
+    margin-top: 2rem;
+}
+
+.user__header{
+    display: flex;
+}
+
+.user__profile img{
+    width: 75%;
+    border-radius: 50%;
+}
+
+.user__data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name, .user__description{
+    color: #fff;
+    font-weight: 500;
+}
+
+.buyer{
+    margin-top: 5px;
+    color: hsl(333, 80%, 67%);
+}
+
+.user__description{
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 425px){
+    body{
+        text-align: center;
+    }
+
+    .description, .users{
+        grid-template-columns: 1fr;
+    }
+
+    .information p{
+        margin-right: 0;
+    }
+
+    .data{
+        margin-top: 1rem;
+    }
+
+    .data-item{
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .data__stars{
+        margin-bottom: 5px;
+    }
+
+    .user{
+        margin-top: 0;
+    }
+
+}
+
