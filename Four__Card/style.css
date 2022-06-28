@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: auto 2fr;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+/*--------DESCRIPTIONS-----------------------*/
+.description{
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+}
+
+.description__header{
+    font-size: 2rem;
+    color: hsl(234, 12%, 34%)
+}
+
+.description__header p:first-child{
+    font-weight: 200;
+}
+
+.description__header p:last-child{
+    font-weight: 600;
+}
+
+.description__paragraph{
+    width: 50%;
+    margin: auto;
+    color: hsl(229, 6%, 66%);
+}
+
+/*---------------------CARDS--------------------------------*/
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 2rem;
+}
+
+.supervisor-container,
+.calculator-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team__builder-karma{
+    display: grid;
+    gap: 2rem 0;
+}
+
+.sub-card{
+    padding: 2rem;
+    border-radius: 7px;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.card__header{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+.card__description{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: hsl(229, 6%, 66%);
+}
+
+.card__image{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.supervisor{
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.team__builder{
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.karma{
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.calculator{
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+@media only screen and (max-width: 425px){
+    .card, .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .description__header{
+        font-size: 1.5rem;
+    }
+
+    .description__paragraph{
+        width: 100%;
+    }
+    
+    .cards{
+        gap: 2rem 0;
+    }
+}
+
+
+
+
+
