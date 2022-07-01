@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./fylo-data-storage-component-master/images/bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    max-width: 1024px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.upload,
+.storage{
+    padding: 1.5rem;
+    color: #fff;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+}
+
+.upload{
+    border-top-right-radius: 5rem;
+}
+
+.icons{
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.icons .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%);
+}
+
+.storage{
+    position: relative;
+    font-size: 0.8rem;
+}
+
+.storage__description{
+    margin-bottom: 1rem;
+}
+
+.storage__description span,
+.progress__bar-information{
+    font-weight: 700;
+}
+
+.storage__progress-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem 0;
+    padding: 2px;
+    max-width: 100%;
+    height: 1rem;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+}
+
+.progress{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 1rem;
+    width: 75%;
+    background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+}
+
+.white__circle-bar{
+    margin-right: 0.1rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.progress__bar-information{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    font-size: 0.7rem;
+}
+
+.storage-card{
+    position: absolute;
+    width: max-content;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.storage__left{
+    padding: 1rem;
+    text-transform: uppercase;
+    color: hsl(229, 57%, 11%);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.storage__left span:first-child{
+    font-size: 2rem;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.storage__left span:last-child{
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: hsl(229, 7%, 55%);
+    vertical-align: middle;
+}
+
+.border__triangule{
+    display: none;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
+}
+
+@media only screen and (min-width: 960px){
+    body{
+        background-color: hsl(229, 57%, 11%);
+        background-image: url('./fylo-data-storage-component-master/images/bg-desktop.png');
+        background-position: bottom;
+        background-size: 100% 50%;
+    }
+
+    .container{
+        flex-direction: row;
+    }
+
+    .logo,
+    .icons{
+        margin-right: 5rem;
+    }
+
+    .logo{
+        margin-top: 0.6rem;
+    }
+
+    .storage{
+        margin-top: auto;
+        width: 36rem;
+        height: max-content;
+    }
+
+    .storage__description{
+        margin-top: 1.2rem;
+    }
+
+    .storage__progress-bar,
+    .progress__bar-information{
+        margin-inline: 10px;
+    }
+
+    .storage-card{
+       top: 0;
+       left: 80%;
+       
+    }
+
+    .storage__left{
+        border-bottom-right-radius: 0px;
+    }
+
+    .border__triangule{
+        display: block;
+        right: 0;
+        top: 95%;
+
+    } 
+}
+
