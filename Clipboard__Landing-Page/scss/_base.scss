@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Open+Sans&display=swap');
+
+$font-stack: Bai Jamjuree, sans-serif;
+$cyan-color: hsl(171, 66%, 44%);
+$blue-color: hsl(233, 100%, 69%);
+$grayish-blue: hsl(210, 10%, 33%);
+$grayish__light-blue: hsl(201, 11%, 66%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 100%;
+    min-height: 100vh;
+    font-family: $font-stack;
+}
+
+header{
+    background-image: url('../clipboard-landing-page-master/images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__container,
+.content{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+@use 'base';
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10rem;
+    padding: 1rem 0;
+    background-color: rgb(247, 246, 246);
+
+   img{
+    max-width: 70%;
+   }
+
+    li{
+        margin-bottom: 1rem;
+        list-style: none;
+    }
+
+    a{
+        color: base.$grayish-blue;
+        text-decoration: none;
+    }
+
+
+    .links{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 3rem;
+
+        a:hover{
+            color: base.$cyan-color;
+        }
+        
+    }
+
+    .social-media{
+        a{
+            margin: 0 1rem;
+        }
+    }
+}

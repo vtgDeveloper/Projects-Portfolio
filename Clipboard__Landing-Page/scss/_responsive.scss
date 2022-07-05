@@ -1,0 +1,56 @@
+@media only screen and (max-width: 426px){
+    section{
+        min-width: 100%;
+        margin: 0;
+    }
+
+    .section{
+        padding: 0 1rem;
+    }
+
+    .description{
+        min-width: 100%;
+        margin: initial auto;
+    }
+
+    .snippet{
+        flex-direction: column;
+
+        .sub-text{
+            min-width: 100%;
+            text-align: center;
+        }
+
+    }
+
+    .features{
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+
+        .feature{
+            gap: 1.5rem;
+        }
+    }
+
+    .companies{
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 2rem 0;
+
+        .footer__image{
+            text-align: center;
+        }
+
+        .links{
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
+    }
+
+}

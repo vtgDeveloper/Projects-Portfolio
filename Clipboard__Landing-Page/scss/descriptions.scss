@@ -1,0 +1,47 @@
+%description{
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+}
+
+//Title__header
+@mixin header-title($color){
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $color;
+}
+
+//Titles
+@mixin titles($color){
+    font-size: 2rem;
+    font-weight: 600;
+    color: $color;
+}
+
+//Paragraphs
+@mixin paragraphs($color) {
+    margin: 1rem 0;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    color: $color;
+}
+
+
+//Sub-title
+@mixin sub-title($color){
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $color;
+}
+
+//Sub-paragraphs
+@mixin sub-texts($color){
+    font-size: 1rem;
+    line-height: 1.3;
+    color: $color;
+}
+
+
+
+

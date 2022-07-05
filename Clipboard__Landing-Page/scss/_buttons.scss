@@ -1,0 +1,34 @@
+@use 'base';
+
+%button{
+    margin: 1.5rem 0.5rem;
+    padding: 1rem 2.5rem;
+    font-family: base.$font-stack;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid rgba($color: #626268, $alpha: 0.7);
+    border-radius: 2rem;
+    letter-spacing: 1px;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.iOS{
+    @extend %button;
+    background-color: base.$cyan-color;
+   
+}
+
+.Mac{
+    @extend %button;
+    background-color: base.$blue-color;
+}
+
+.iOS:hover,
+.Mac:hover{
+    cursor: pointer;
+}

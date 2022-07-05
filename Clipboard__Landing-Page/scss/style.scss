@@ -1,0 +1,59 @@
+@use 'base';
+@use 'descriptions';
+@use 'snippets';
+@use 'features';
+@use 'buttons';
+@use 'footer';
+@use 'responsive';
+
+.header__container{
+    margin-bottom: 5rem;
+    padding: 2rem 0;
+
+    section{
+        @extend %description;
+
+        h1{
+            @include descriptions.header-title(base.$grayish-blue);
+        }
+
+        p{
+            @include descriptions.paragraphs(base.$grayish__light-blue);
+        }
+    }
+}
+
+.section{
+    .description{
+        @extend %description;
+        margin-bottom: 3rem;
+
+        span{
+            @include descriptions.titles(base.$grayish-blue);
+        }
+
+        p{
+            @include descriptions.paragraphs(base.$grayish__light-blue);
+        }
+    }
+
+    .topic{
+        span{
+            @include descriptions.sub-title(base.$grayish-blue);
+        }
+
+        p{
+            @include descriptions.sub-texts(base.$grayish__light-blue);
+        }
+    }
+
+    .access-image{
+        display: flex;
+        justify-content: center;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+}
